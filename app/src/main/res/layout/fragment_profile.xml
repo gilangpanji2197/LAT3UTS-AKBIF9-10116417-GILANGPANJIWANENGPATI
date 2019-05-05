@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:background="#F2f2f2"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/foto"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berkenalan denganku agar kau tahu siapa diriku"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="320dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="2dp"
+                android:background="#D7D7FD"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/contact"
+                    android:textStyle="bold"
+                    android:text="Contact "
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/contact"
+                    android:id="@+id/ic_whatsapp"
+                    android:src="@drawable/phone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contact"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/NoHp"
+                    android:text="081772300835"
+                    android:layout_toRightOf="@id/ic_whatsapp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/ic_whatsapp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/ic_email"
+                    android:background="@drawable/email"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gilangpanji@mahasiswa.unikom.ac.id"
+                    android:id="@+id/email"
+                    android:layout_below="@id/NoHp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#7080C9"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/ic_email"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/ic_instagram"
+
+                    android:layout_below="@id/ic_email"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ig"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gpwp_"
+                    android:id="@+id/iga"
+                    android:textStyle="bold"
+                    android:layout_below="@id/email"
+                    android:layout_toRightOf="@id/ic_instagram"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="320dp"
+                android:orientation="vertical"
+                android:layout_height="150dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FindMe"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:layout_marginTop="10dp"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Apliaction"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtversion"
+                    android:textStyle="bold"
+
+                    />
+                <Button
+                    android:layout_below="@id/txtversion"
+                    android:gravity="center_vertical"
+                    android:layout_width="320dp"
+                    android:id="@+id/button"
+                    android:layout_marginLeft="20dp"
+                    android:text="About"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

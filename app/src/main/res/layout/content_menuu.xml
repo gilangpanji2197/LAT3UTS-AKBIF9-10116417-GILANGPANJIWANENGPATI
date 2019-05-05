@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Menuu"
+    tools:showIn="@layout/app_bar_menuu"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/foto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/foto"
+            app:civ_border_width="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:civ_border_color="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gilang Panji Waneng Pati"
+            android:layout_toRightOf="@+id/foto"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/nama"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gilangpanji@mahasiswa.unikom.ac.id"
+            android:layout_below="@id/nama"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/foto"
+            android:textColor="#000"
+            android:textSize="11dp"
+            android:id="@+id/mail"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Me"
+            android:layout_below="@id/mail"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:id="@+id/about"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Berkenalanlah denganku agar kau tau siapa diriku"
+            android:layout_below="@id/about"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:id="@+id/kenal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interest"
+            android:layout_below="@+id/kenal"
+            android:gravity="center"
+            android:layout_marginTop="85dp"
+            android:id="@+id/inter"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobby : Makan, Main Game, Memasak, Menggambar"
+            android:layout_below="@id/inter"
+            android:layout_marginTop="14dp"
+            android:id="@+id/hobi"
+            android:layout_marginLeft="27dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Makes : Seafood, Junkfood, Masakan Mama"
+            android:layout_below="@id/hobi"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/makes"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Makes : Apa aja suka, asal belum expired"
+            android:layout_below="@id/makes"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/mikes"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interest : Apa aja yang menghasilkan Uang"
+            android:layout_below="@id/mikes"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/inte"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cita-cita : Jadi orang kaya dalam segala hal"
+            android:layout_below="@id/inte"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/cita"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
